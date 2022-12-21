@@ -1,1 +1,198 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+     $blue: #0282F9;
+    $black: #1C1C1C;
+    $white: #FFFFFF;
+    $li: #b6b5b5;
+    $grey: #303030;
+
+    body {
+        font-family: 'Roboto', Helvetica;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 1070px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    section.bg-blue {
+        background-color: $blue;
+        padding: 20px;
+    }
+
+    span {
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-comic {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: calc((100%) / 5);
+        img{
+            max-width: 20%;
+        }
+    }
+    header{
+            overflow: hidden;
+            background-color: $white;
+            .container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            ul{
+                display: flex;
+                justify-content: flex-end;
+    
+    
+                li{
+                    height: 100%;
+                    padding: 10px;
+                    a{
+                            
+                        text-transform: uppercase;
+                        color: $black;
+                    }
+                    div.link{
+                        padding: 10px;
+                        
+                        
+                        
+                    }
+                    div.linea{
+                        // background-color: $blue;
+                        height: 10px;
+                        position: relative;
+                        top: 47px;
+                    }
+                    .link.active a{
+                        color: $blue;
+                    }
+                    .linea.active{
+                        background-color: $blue;
+                    }
+                }
+            }
+        
+    }
+    div.heroComponent{
+        overflow: hidden;
+        height: 300px;
+        background-image: url(../img/jumbotron.jpg);
+    }
+    div.comics-cards{
+        .d-flex{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card-comics{
+            margin: 10px;
+        }
+        .img{
+            overflow: hidden;
+            height: 150px;
+            width: 150px;
+        }
+        .title{
+            color: $black;
+            width: 150px;
+            text-transform: uppercase;
+        }
+    }
+    footer{
+        section.ul {
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        background-image: url(../img/footer-bg.jpg);
+
+        div.container.d-flex {
+            ul {
+                text-transform: uppercase;
+            }
+
+            li {
+                text-transform: capitalize;
+            }
+
+            div.img {
+                height: 50px;
+                position: relative;
+
+                img {
+                    width: 80%;
+                    position: relative;
+                    top: -200px;
+                    right: -80px;
+                }
+            }
+
+        }
+
+        h2 {
+            padding: 20px 0;
+            color: $white;
+        }
+
+        div.li {
+            display: flex;
+            color: $li;
+
+            div {
+                margin: 0 20px;
+            }
+        }
+
+    }
+
+    section.info {
+        background-color: $grey;
+
+        div.container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                button {
+                    padding: 10px;
+                    text-transform: uppercase;
+                    background-color: $grey;
+                    color: $white;
+                    border: 3px solid $blue;
+                }
+
+                div {
+                    width: 10rem;
+                }
+
+                span a {
+                    color: $blue;
+                }
+            }
+        }
+    }
+    }

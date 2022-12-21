@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Guest\ComicController as ComicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $comics = config('dbcomic.comic');
+    // dd(compact('comics'));
+    return view('home', compact('comics'));
 });
+Route::resource('comic', ComicController::class);
