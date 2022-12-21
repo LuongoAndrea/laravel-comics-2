@@ -1,5 +1,5 @@
 @extends('layaut.app')
-@section('page-title', 'comics')
+@section('page-title', $comic['title'])
 @section('content')
 {{-- @foreach ($comics as $comic)
 <li>{{$comic['title']}}</li> --}}
